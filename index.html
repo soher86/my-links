@@ -1,25 +1,101 @@
-معرض أعمالي وروابطي
-    
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض أعمالي وروابطي</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 16px;
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .link-card {
+            display: block;
+            background-color: #1e293b;
+            color: #f8fafc;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            border: 1px solid #334155;
+            transition: all 0.2s ease-in-out;
+        }
+        .link-card:hover {
+            background-color: #334155;
+            border-color: #6366f1;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <div class="profile-img">🌐</div>
+        <h1>معرض أعمالي وروابطي</h1>
+        <p>مرحباً بكم! تجدون هنا أحدث المشروعات والمواقع الخاصة بي</p>
 
-
-    
-        🌐
-        معرض أعمالي وروابطي
-        مرحباً بكم! تجدون هنا أحدث المشروعات والمواقع الخاصة بي
-
-        
-            
+        <div class="links-list">
+            <a href="http://designdisplay.website" target="_blank" class="link-card">
                 🖥️ موقع Design Display
-            
+            </a>
 
-            
+            <a href="https://soher86.github.io/lms-project/" target="_blank" class="link-card">
                 📚 مشروع نظام إدارة التعلم (LMS Project)
-            
+            </a>
 
-            
+            <a href="https://soher86.github.io/realestate/" target="_blank" class="link-card">
                 🏠 مشروع العقارات (Real Estate)
-            
+            </a>
 
-            
+            <a href="https://soher86.github.io/weather-4days/" target="_blank" class="link-card">
                 🌤️ تطبيق الطقس (Weather 4 Days)
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
