@@ -89,7 +89,7 @@
     }
 
     .card.active .card-dropdown {
-      max-height: 200px;
+      max-height: 250px;
       padding: 15px;
       margin-bottom: 15px;
       border: 1px solid #e2e8f0;
@@ -118,13 +118,11 @@
       text-align: center;
       border: none;
       cursor: pointer;
-      transition: opacity 0.2s, transform 0.1s;
+      transition: opacity 0.2s;
       white-space: nowrap;
     }
 
-    .btn:hover {
-      opacity: 0.9;
-    }
+    .btn:hover { opacity: 0.9; }
 
     .btn-toggle {
       background-color: #f1f5f9;
@@ -141,17 +139,18 @@
       color: #ffffff;
     }
 
-    /* WhatsApp Bottom Banner */
-    .whatsapp-wrapper {
+    /* Contact Card Linked to External Page */
+    .contact-wrapper {
       width: 100%;
       max-width: 900px;
     }
 
-    .whatsapp-card {
+    .contact-card-link {
       background: #ffffff;
       border-radius: 20px;
       padding: 20px 24px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.8);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -159,19 +158,19 @@
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .whatsapp-card:hover {
+    .contact-card-link:hover {
       transform: translateY(-3px);
-      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.15);
+      box-shadow: 0 15px 30px rgba(2, 132, 199, 0.15);
     }
 
-    .whatsapp-info {
+    .contact-info {
       display: flex;
       align-items: center;
       gap: 15px;
     }
 
-    .whatsapp-btn {
-      background-color: #25d366;
+    .contact-btn-action {
+      background-color: #0284c7;
       color: white;
       padding: 10px 20px;
       border-radius: 10px;
@@ -192,11 +191,9 @@
         <div class="card-icon">🖥️</div>
         <div class="card-title">موقع أخبار (News Site)</div>
       </div>
-      
       <div class="card-dropdown">
         <p class="card-description">موقع إخباري ديناميكي متكامل يعتمد على وردبريس مع تخصيص الأقسام والتهيئة لمحركات البحث SEO.</p>
       </div>
-
       <div class="actions-group">
         <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
         <a href="http://designdisplay.website" target="_blank" class="btn btn-live">عرض أونلاين</a>
@@ -210,11 +207,9 @@
         <div class="card-icon">🎓</div>
         <div class="card-title">مدرسة إلكترونية (E-School)</div>
       </div>
-      
       <div class="card-dropdown">
         <p class="card-description">واجهة منصة تعليمية حديثة تم بناؤها وتصميمها باستخدام Tailwind CSS بتصميم متجاوب كلياً.</p>
       </div>
-
       <div class="actions-group">
         <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
         <a href="https://soher86.github.io/lms-project/" target="_blank" class="btn btn-live">عرض أونلاين</a>
@@ -228,11 +223,9 @@
         <div class="card-icon">🏠</div>
         <div class="card-title">مشروع عقارات (Real Estate)</div>
       </div>
-      
       <div class="card-dropdown">
         <p class="card-description">منصة لتصفح وعرض العقارات مع ميزات الفلترة وتنسيقات منسقة باستخدام Sass.</p>
       </div>
-
       <div class="actions-group">
         <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
         <a href="https://soher86.github.io/realestate/" target="_blank" class="btn btn-live">عرض أونلاين</a>
@@ -246,11 +239,9 @@
         <div class="card-icon">🌤️</div>
         <div class="card-title">تطبيق طقس (Weather App)</div>
       </div>
-      
       <div class="card-dropdown">
         <p class="card-description">تطبيق لعرض حالة الطقس والتوقعات لـ 4 أيام باستخدام React وربطه مع REST APIs.</p>
       </div>
-
       <div class="actions-group">
         <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
         <a href="https://soher86.github.io/weather-4days/" target="_blank" class="btn btn-live">عرض أونلاين</a>
@@ -260,17 +251,17 @@
 
   </div>
 
-  <!-- Bottom WhatsApp Card -->
-  <div class="whatsapp-wrapper">
-    <a href="https://wa.me/qr/YBVCPW2XHT37C1" target="_blank" class="whatsapp-card">
-      <div class="whatsapp-info">
-        <div class="card-icon" style="background: #e8f5e9; color: #25d366;">💬</div>
+  <!-- Contact Link Card Linked to https://soher86.github.io/contact/ -->
+  <div class="contact-wrapper">
+    <a href="https://soher86.github.io/contact/" target="_blank" class="contact-card-link">
+      <div class="contact-info">
+        <div class="card-icon" style="background: #e0f2fe; color: #0284c7;">📫</div>
         <div>
           <div class="card-title">تواصل معي</div>
-          <div style="font-size: 0.85rem; color: #64748b;">لأي استفسارات أو مشاريع جديدة</div>
+          <div style="font-size: 0.85rem; color: #64748b;">اضغط للانتقال إلى صفحة وسائل التواصل الشخصية</div>
         </div>
       </div>
-      <div class="whatsapp-btn">تواصل عبر واتساب</div>
+      <div class="contact-btn-action">تواصل معي ↗</div>
     </a>
   </div>
 
@@ -278,11 +269,7 @@
     function toggleCard(button) {
       const card = button.closest('.card');
       card.classList.toggle('active');
-      if (card.classList.contains('active')) {
-        button.innerText = 'إخفاء التفاصيل';
-      } else {
-        button.innerText = 'تفاصيل المشروع';
-      }
+      button.innerText = card.classList.contains('active') ? 'إخفاء التفاصيل' : 'تفاصيل المشروع';
     }
   </script>
 
