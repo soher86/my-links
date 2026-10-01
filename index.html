@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>معرض مشاريعي</title>
+  <title>معرض مشاريع المهندسة سهير لملوح</title>
   <style>
     * {
       box-sizing: border-box;
@@ -20,17 +20,38 @@
       align-items: center;
     }
     
+    /* Header Section with Name */
+    .profile-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .developer-name {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .developer-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 12px;
+    }
+
     h1.main-title {
-      color: #1e293b;
+      color: #475569;
       margin-bottom: 30px;
-      font-size: 2.2rem;
+      font-size: 1.5rem;
       font-weight: 700;
       text-align: center;
     }
 
     .section-title {
       color: #334155;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 700;
       width: 100%;
       max-width: 900px;
@@ -193,7 +214,12 @@
 </head>
 <body>
 
-  <h1 class="main-title">معرض مشاريعي</h1>
+  <!-- رأس الصفحة باسم المطور -->
+  <header class="profile-header">
+    <h1 class="developer-name">المهندسة سهير لملوح</h1>
+    <p class="developer-title">Front-End Developer & Software Engineer</p>
+    <h2 class="main-title">معرض المشاريع والبرمجيات</h2>
+  </header>
 
   <!-- القسم الأول: المشاريع المكتملة -->
   <div class="projects-grid">
@@ -281,7 +307,7 @@
   </div>
 
   <!-- القسم الثاني: مشاريع قيد التطوير -->
-  <h2 class="section-title">🚧 مشاريع قيد التطوير</h2>
+  <h3 class="section-title">🚧 مشاريع قيد التطوير</h3>
   <div class="projects-grid">
 
     <!-- Card: News Site -->
