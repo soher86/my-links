@@ -28,6 +28,17 @@
       text-align: center;
     }
 
+    .section-title {
+      color: #334155;
+      font-size: 1.5rem;
+      font-weight: 700;
+      width: 100%;
+      max-width: 900px;
+      margin: 20px 0 15px 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #cbd5e1;
+    }
+
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -143,6 +154,7 @@
     .contact-wrapper {
       width: 100%;
       max-width: 900px;
+      margin-top: 10px;
     }
 
     .contact-card-link {
@@ -183,25 +195,10 @@
 
   <h1 class="main-title">معرض مشاريعي</h1>
 
+  <!-- القسم الأول: المشاريع المكتملة -->
   <div class="projects-grid">
 
-    <!-- Card 1 -->
-    <div class="card">
-      <div class="card-header">
-        <div class="card-icon">🖥️</div>
-        <div class="card-title">موقع أخبار (News Site)</div>
-      </div>
-      <div class="card-dropdown">
-        <p class="card-description">موقع إخباري ديناميكي متكامل يعتمد على وردبريس مع تخصيص الأقسام والتهيئة لمحركات البحث SEO.</p>
-      </div>
-      <div class="actions-group">
-        <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
-        <a href="http://designdisplay.website" target="_blank" class="btn btn-live">عرض أونلاين</a>
-        <a href="رابط_فيديو_درايف_1" target="_blank" class="btn btn-video">فيديو التوضيح</a>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
+    <!-- Card: E-School -->
     <div class="card">
       <div class="card-header">
         <div class="card-icon">🎓</div>
@@ -217,7 +214,7 @@
       </div>
     </div>
 
-    <!-- Card 3 -->
+    <!-- Card: Real Estate -->
     <div class="card">
       <div class="card-header">
         <div class="card-icon">🏠</div>
@@ -233,7 +230,7 @@
       </div>
     </div>
 
-    <!-- Card 4 -->
+    <!-- Card: Weather App -->
     <div class="card">
       <div class="card-header">
         <div class="card-icon">🌤️</div>
@@ -249,15 +246,14 @@
       </div>
     </div>
 
-    
+    <!-- Card: Dashboard -->
     <div class="card">
       <div class="card-header">
         <div class="card-icon">📊</div>
-        <div class="card-title">:)Dashboard(  لوحة تحكم النظام</div>
+        <div class="card-title">لوحة تحكم النظام (Dashboard)</div>
       </div>
       <div class="card-dropdown">
-        <p class="card-description">تصميم واجهة مستخدم متقدمة ومخصصة لإدارة وتحليل البيانات المعقدة 
-وعرض الإحصائيات الفورية بنظام برمجي متكامل.</p>
+        <p class="card-description">تصميم واجهة مستخدم متقدمة ومخصصة لإدارة وتحليل البيانات المعقدة وعرض الإحصائيات الفورية بنظام برمجي متكامل.</p>
       </div>
       <div class="actions-group">
         <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
@@ -266,42 +262,63 @@
       </div>
     </div>
 
-    
-<div class="card">
-  <div class="card-header">
-    <div class="card-icon">🕌</div>
-    <div class="card-title">تطبيق مواقيت الصلاة (Prayer Times Pro)</div>
-  </div>
-  <div class="card-dropdown">
-    <p class="card-description">تطبيق واجهة مستخدم تفاعلي لحساب وعرض مواقيت الصلاة بدقة بناءً على الموقع الجغرافي، مع تنبيهات هجرية وحساب التوقيت المتبقي لكل صلاة بنظام برمجي متكامل.</p>
-  </div>
-  <div class="actions-group">
-    <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
-    <a href="https://soher86.github.io/prayer-times-pro/" target="_blank" class="btn btn-live">عرض أونلاين</a>
-    <a href="https://drive.google.com/file/d/19Oe7SEeh_vGl2bBY7OcjzgvuOEgKYdYk/view?usp=sharing" target="_blank" class="btn btn-video">فيديو التوضيح</a>
-  </div>
-</div>
-
-<div class="card">
-  <div class="card-header">
-    <div class="card-icon">📚</div>
-    <div class="card-title">نظام إدارة المكتبة (Library Management System)</div>
-  </div>
-  <div class="card-dropdown">
-    <p class="card-description">
-      لوحة تحكم إدارية متكاملة لنظام إدارة المكتبة مصممة باستخدام React و Redux Toolkit ومربوطة بنظام إدارة المحتوى Strapi CMS وقاعدة بيانات PostgreSQL المرفوعة على Render. تتيح إدارة كاملة للكتب، التصنيفات، واستعارات القراء بكفاءة عالية.
-    </p>
-  </div>
-  <div class="actions-group">
-    <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
-    <a href="https://library-db-frontend-azure.vercel.app" target="_blank" class="btn btn-live">عرض أونلاين</a>
-    <a href="#" target="_blank" class="btn btn-video">فيديو التوضيح</a>
-  </div>
-</div>
+    <!-- Card: Prayer Times -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">🕌</div>
+        <div class="card-title">تطبيق مواقيت الصلاة (Prayer Times Pro)</div>
+      </div>
+      <div class="card-dropdown">
+        <p class="card-description">تطبيق واجهة مستخدم تفاعلي لحساب وعرض مواقيت الصلاة بدقة بناءً على الموقع الجغرافي، مع تنبيهات هجرية وحساب التوقيت المتبقي لكل صلاة بنظام برمجي متكامل.</p>
+      </div>
+      <div class="actions-group">
+        <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
+        <a href="https://soher86.github.io/prayer-times-pro/" target="_blank" class="btn btn-live">عرض أونلاين</a>
+        <a href="https://drive.google.com/file/d/19Oe7SEeh_vGl2bBY7OcjzgvuOEgKYdYk/view?usp=sharing" target="_blank" class="btn btn-video">فيديو التوضيح</a>
+      </div>
+    </div>
 
   </div>
 
-  <!-- Contact Link Card Linked to https://soher86.github.io/contact/ -->
+  <!-- القسم الثاني: مشاريع قيد التطوير -->
+  <h2 class="section-title">🚧 مشاريع قيد التطوير</h2>
+  <div class="projects-grid">
+
+    <!-- Card: News Site -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">🖥️</div>
+        <div class="card-title">موقع أخبار (News Site)</div>
+      </div>
+      <div class="card-dropdown">
+        <p class="card-description">موقع إخباري ديناميكي متكامل يعتمد على وردبريس مع تخصيص الأقسام والتهيئة لمحركات البحث SEO.</p>
+      </div>
+      <div class="actions-group">
+        <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
+        <a href="https://drive.google.com/file/d/1xxxxxxxxx/view?usp=sharing" target="_blank" class="btn btn-video">فيديو التوضيح</a>
+      </div>
+    </div>
+
+    <!-- Card: Library Management System -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">📚</div>
+        <div class="card-title">نظام إدارة المكتبة (Library Management System)</div>
+      </div>
+      <div class="card-dropdown">
+        <p class="card-description">
+          لوحة تحكم إدارية متكاملة لنظام إدارة المكتبة مصممة باستخدام React و Redux Toolkit ومربوطة بنظام إدارة المحتوى Strapi CMS وقاعدة بيانات PostgreSQL المرفوعة على Render. تتيح إدارة كاملة للكتب، التصنيفات، واستعارات القراء بكفاءة عالية.
+        </p>
+      </div>
+      <div class="actions-group">
+        <button class="btn btn-toggle" onclick="toggleCard(this)">تفاصيل المشروع</button>
+        <a href="https://drive.google.com/file/d/1xxxxxxxxx/view?usp=sharing" target="_blank" class="btn btn-video">فيديو التوضيح</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Contact Link Card -->
   <div class="contact-wrapper">
     <a href="https://soher86.github.io/contact/" target="_blank" class="contact-card-link">
       <div class="contact-info">
